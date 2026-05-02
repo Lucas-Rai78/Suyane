@@ -72,11 +72,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   min-height: calc(100dvh - 80px);
   width: 100%;
 }
 
-.title{
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +85,7 @@ main {
   font-size: 0.95rem;
 }
 
-.title-inner{
+.title-inner {
   width: 100%;
   height: 100%;
   position: relative;
@@ -120,6 +121,7 @@ main .mensagem {
   font-size: 40rem;
   letter-spacing: 5rem;
   font-weight: 400;
+  text-align: center;
 }
 
 .cards-container {
@@ -137,7 +139,7 @@ main .mensagem {
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
 
-  background: rgba(255, 255, 255, 0.1); 
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 
@@ -145,6 +147,10 @@ main .mensagem {
   color: var(--primary-font-color);
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: scale(1.06);
 }
 
 .card-photo {
@@ -174,22 +180,10 @@ main .mensagem {
 }
 
 .card-content p {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.65;
   opacity: 0.95;
   margin-bottom: 20px;
-}
-
-.card-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 24px 28px;
-  font-size: 1.2rem;
-}
-
-.card-footer span {
-  opacity: 0.8;
 }
 
 .p-card-footer {
@@ -209,12 +203,9 @@ main .mensagem {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  padding: 4rem 2rem 6rem;
+  padding: 4rem 2rem 0rem;
   width: 100%;
   position: relative;
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 #section3::after {
@@ -233,6 +224,7 @@ main .mensagem {
   -webkit-mask-image: linear-gradient(to left, black 10%, transparent);
 
   opacity: 0.8;
+  pointer-events: none;
 }
 .flip-card {
   width: 80%;
@@ -282,7 +274,105 @@ main .mensagem {
 
 .flip-front p,
 .flip-back p {
-  font-size: clamp(0.9rem, 2vw, 1.6rem);
+  font-size: 1.4rem;
+}
+
+.carta-container {
+  width: 80%;
+  max-width: 400px;
+  aspect-ratio: 4 / 1;
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.463);
+  border-radius: 1rem;
+}
+
+.carta-btn {
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backface-visibility: hidden;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ff3535;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.popup-container {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.popup-container.active {
+  display: flex;
+  transition: .4s ease;
+}
+
+.pop-box {
+  width: 500px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  padding: .4rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.popup-container.active .pop-box {
+  transform: scale(1);
+  opacity: 1;
+  transition: 0.4s ease;
+  transition-delay: 0.25s;
+  display: flex;
+}
+
+.pop-box h1 {
+  color: #00b8ab;
+  text-align: center;
+}
+
+.pop-box p {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.pop-box .close-btn {
+  background-color: #00efdf73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-weight: bold;
+  color: #111;
 }
 
 .calendar-container {
@@ -300,10 +390,6 @@ main .mensagem {
   padding: clamp(3rem, 8vw, 10rem) 0;
   width: 100%;
   position: relative;
-
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .calendar-container {
@@ -322,8 +408,8 @@ main .mensagem {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
-  
-  box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
+
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   text-align: center;
   color: #000;
 }
@@ -348,6 +434,23 @@ main .mensagem {
 }
 
 @media (max-width: 500px) {
+  .header-container {
+    padding: 0.6rem 0;
+  }
+  .logo {
+    left: 1rem;
+  }
+  .fa-heart {
+    right: 1rem;
+  }
+  .navigation {
+    display: none;
+  }
+  main .mensagem {
+    font-size: 18rem;
+    letter-spacing: 1rem;
+    margin-left: 15px;
+  }
   .calendar-container {
     gap: 1rem;
   }
