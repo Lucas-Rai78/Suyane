@@ -12,12 +12,12 @@
 
 @font-face {
   font-family: 'Dugas';
-  src: url('/assets/fonts/dugas-regular.ttf') format('truetype');
+  src: url('assets/fonts/dugas-regular.ttf') format('truetype');
 }
 
 body {
   height: 100%;
-  background-image: url(/assets/img/bg.jpg);
+  background-image: url('assets/img/bg.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
