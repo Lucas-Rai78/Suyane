@@ -566,6 +566,7 @@ main {
   }
 }
 .milestone {
+  display: none;
   padding: 0.9rem 1.8rem;
   border-radius: 999px;
   text-align: center;
