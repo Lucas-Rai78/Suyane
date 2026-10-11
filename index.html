@@ -3,264 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dedicado à Suyane!</title>
+    <meta name="theme-color" content="#a9c9ff" />
+    <meta
+      name="description"
+      content="Um presente digital para Suyane, feito com amor."
+    />
+    <title>Dedicado à Suyane 💙</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
-  <body>
+  <body class="is-locked">
+    <div class="hearts" id="hearts" aria-hidden="true"></div>
 
-    <header>
-      <div class="header-container">
-        <div class="logo">Com amor, Raí!</div>
+    <!-- Boas-vindas -->
+    <section class="welcome glass" id="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-card">
+        <i class="fa-solid fa-heart welcome-icon" aria-hidden="true"></i>
+        <p>Tem uma surpresa esperando por você…</p>
+        <h1 id="welcome-title">Oi, <span data-name></span></h1>
+        <button class="btn" id="enter" type="button">
+          <i class="fa-solid fa-envelope-open-text"></i> Entrar
+        </button>
+      </div>
+    </section>
 
-        <nav class="navigation">
-          <ul>
-            <li><a href="#section2">Você</a></li>
-            <li><a href="#section3">Momentos</a></li>
-            <li><a href="#contator">Contador</a></li>
-          </ul>
-        </nav>
-
-        <i class="fas fa-heart"></i>
+    <header class="site-header glass">
+      <a class="logo" href="#hero">Com amor, <span data-from></span></a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="#voce">Você</a></li>
+          <li><a href="#momentos">Momentos</a></li>
+          <li><a href="#contador">Contador</a></li>
+          <li><a href="#carta">Carta</a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-heart beat" aria-hidden="true"></i>
     </header>
 
     <main>
-      <section id="section1 voce">
-        <h1 class="mensagem">ILOVEYOU</h1>
+      <section class="hero" id="hero">
+        <h1 class="mensagem" aria-label="I love you">ILOVEYOU</h1>
+        <p class="ticker" aria-live="off">
+          Você é <strong id="ticker">espetacular</strong>
+        </p>
+        <a class="scroll-hint" href="#voce" aria-label="Rolar para baixo"
+          ><i class="fa-solid fa-chevron-down"></i
+        ></a>
       </section>
 
-      <section id="section2">
-        <div class="cards-container">
-
-          <div class="card card1">
-            <div class="card-photo">
-              <img src="./assets/img/she.jpg" alt="She">
-            </div>
-
-            <div class="card-content">
-              <h2>Espetacular</h2>
-              <p>
-                Você é simplesmente espetacular… chama a minha atenção sem esforço e deixa tudo mais colorido só por existir.
-              </p>
-            </div>
-          </div>
-
-          <div class="card card2">
-            <div class="card-photo">
-              <img src="./assets/img/she1.jpg" alt="She1">
-            </div>
-
-            <div class="card-content">
-              <h2>Maravilhosa</h2>
-              <p>
-                Você é maravilhosa em cada detalhe, no jeito de falar, de sorrir, olhar, amar… tudo em você foi feito com carinho.
-              </p>
-            </div>
-          </div>
-
-          <div class="card card3">
-            <div class="card-photo">
-              <img src="./assets/img/she2.jpg" alt="She2">
-            </div>
-
-            <div class="card-content">
-              <h2>Verdadeira</h2>
-              <p>
-                O que mais me encanta em você é o quanto você é verdadeira… não finge, não força, só é. Isso me deixa mais apaixonado
-              </p>
-            </div>
-          </div>
-
-          <div class="card card4">
-            <div class="card-photo">
-              <img src="./assets/img/she3.jpg" alt="She3">
-            </div>
-
-            <div class="card-content">
-              <h2>Fantástica</h2>
-              <p>
-                Você é fantástica, do tipo que transforma momentos simples em memórias que ficam na cabeça a vida toda.
-              </p>
-            </div>
-          </div>
-          
-          <div class="card card5">
-            <div class="card-photo">
-              <img src="./assets/img/she4.jpg" alt="She4">
-            </div>
-
-            <div class="card-content">
-              <h2>Impecável</h2>
-              <p>
-                Você é impecável… não só sobre na aparência física, mas no que há dentro de ti, como age, pensa e trata as pessoas.
-              </p>
-            </div>
-          </div>
-          
-          <div class="card card6">
-            <div class="card-photo">
-              <img src="./assets/img/she5.jpg" alt="She5">
-            </div>
-
-            <div class="card-content">
-              <h2>Exuberante</h2>
-              <p>
-                Tudo em você é exuberante… sua presença que preenche e conforta o ambiente sem precisar dizer uma palavra.
-              </p>
-            </div>
-          </div>
-          
-          <div class="card card7">
-            <div class="card-photo">
-              <img src="./assets/img/she6.jpg" alt="She6">
-            </div>
-
-            <div class="card-content">
-              <h2>Magnífica</h2>
-              <p>
-                Você é magnífica nos pequenos momentos… no jeito que ri, no olhar distraído, nas coisas simples que, se não fosse você, nem teriam graça.
-              </p>
-            </div>
-
-          </div>
-          
-          <div class="card card8">
-            <div class="card-photo">
-              <img src="./assets/img/she7.jpg" alt="She7">
-            </div>
-
-            <div class="card-content">
-              <h2>Divina</h2>
-              <p>
-                Você é divina… é difícil encontrar outra palavra que chegue perto de você como essa, Deus te fez com total equilíbrio cósmico.
-              </p>
-            </div>
-          </div>
-        </div>
+      <section id="voce" class="section">
+        <h2 class="section-title glass">Por que você é você</h2>
+        <p class="hint">Toque em uma foto para abrir</p>
+        <div class="cards-container" id="cards"></div>
       </section>
 
-      <section id="section3">
-        <div class="flip-card">
-          <div class="flip-inner">
-            
-            <div class="flip-front">
-              <p>24/02/2026</p>
-            </div>
+      <section id="momentos" class="section">
+        <h2 class="section-title glass">Nossa história</h2>
+        <div class="timeline" id="timeline"></div>
+      </section>
 
-            <div class="flip-back">
-              <p>Trocamos as primeiras mensagens</p>
-            </div>
+      <section id="contador" class="section">
+        <h2 class="section-title glass">Tempo juntos</h2>
+        <div class="calendar-container" id="counter"></div>
+        <p class="milestone glass" id="milestone"></p>
+      </section>
 
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-inner">
-            
-            <div class="flip-front">
-              <p>09/04/2026</p>
-            </div>
-
-            <div class="flip-back">
-              <p>Demos nosso primeiro selinho</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-inner">
-            
-            <div class="flip-front">
-              <p>09/04/2026</p>
-            </div>
-
-            <div class="flip-back">
-              <p>Começamos a namorar</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="flip-card">
-          <div class="flip-inner">
-            
-            <div class="flip-front">
-              <p>Acredite...</p>
-            </div>
-
-            <div class="flip-back">
-              <p>Eu te amo!</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="carta-container">
-            <button class="carta-btn">Mensagem</button>
-          </div>
-          
-          <div class="popup-container">
-            <div class="pop-box">
-              <h1>Suyane...</h1>
-              <p>
-                Eu fico tentando encontrar um jeito certo de começar isso aqui… mas a verdade é que quando o assunto é você, nada parece suficiente.
-                Eu penso muito na gente. Nos nossos momentos mais simples, que acabam sendo os mais especiais. Nos nossos selinhos que parecem pequenos, mas que carregam um mundo inteiro dentro deles. Nos abraços demorados, daqueles que parecem encaixar tudo no lugar, como se o resto do mundo deixasse de importar por alguns segundos. É ali que eu sinto paz de verdade.
-                E as nossas noites conversando… meu Deus. Quantas vezes a gente virou horas e horas só falando, rindo, viajando em assunto nada a ver, ou até em silêncio, mas com aquela sensação boa de estar junto. Eu nunca tive isso antes.
-                Tem momentos com você que parecem tão simples, mas ficam gravados em mim de um jeito absurdo. Seu jeito, sua voz, suas manias, suas risadas… tudo. Às vezes eu paro e penso: “como foi que eu tive a sorte de encontrar você?”. Porque não é só sobre estar com alguém, é sobre estar com você.
-                Você me faz sentir coisas que eu nem sabia que existiam. É leve, é intenso, é verdadeiro. Cada dia que passa, eu percebo que isso aqui não é passageiro, não é qualquer coisa. É algo que cresce, que cria raiz, que se fortalece.
-                E eu gosto de tudo em nós. Dos momentos felizes, das nossas brincadeiras, das nossas conversas profundas… até das dificuldades, porque eu sei que a gente encara junto. E isso faz tudo valer ainda mais a pena.
-                Eu amo quando você tá perto de mim. Amo quando a gente se abraça, gostaria que o tempo parasse só pra eu não poder largar você em momento algum. Amo quando você encosta em mim, quando me olha, quando sorri daquele jeito que só você tem. Amo o jeito que a gente se conecta sem precisar explicar muito.
-                Eu quero continuar vivendo tudo isso. Quero mais noites viradas, mais abraços, mais risadas, mais momentos bobos que viram lembranças gigantes. Quero continuar construindo nossa história, do nosso jeito.
-                E independente de qualquer coisa, eu quero que você saiba: eu tô aqui! De verdade! Pra tudo! Sempre! Te amo!
-                Eu te amo muito! Muito mesmo!
-                <br>
-                Com todo o carinho do mundo,
-                <br>
-                seu namorado ❤️
-              </p>
-              <button class="close-btn">Fechar</button>
-            </div>
-          </div>
-      </section>  
-
-      <section id="section4">
-        <div class="title" id="contator">
-          <div class="title-inner">
-            <p>Tempo juntos</p>
-          </div>
-        </div>
-        <div class="calendar-container">
-          <div class="calendar">
-            <div class="calendar-header">
-              DIAS
-            </div>
-
-            <div class="calendar-body">
-              <h1 class="time">13</h1>
-            </div>
-          </div>
-          <div class="calendar">
-            <div class="calendar-header">
-              MINUTOS
-            </div>
-
-            <div class="calendar-body">
-              <h1 class="time">13</h1>
-            </div>
-          </div>
-          <div class="calendar">
-            <div class="calendar-header">
-              SEGUNDOS
-            </div>
-
-            <div class="calendar-body">
-              <h1 class="time">13</h1>
-            </div>
-          </div> 
-        </div>
+      <section id="carta" class="section">
+        <button class="btn btn-rose" id="open-letter" type="button">
+          <i class="fa-solid fa-envelope-heart"></i> Abrir carta
+        </button>
       </section>
     </main>
-    <script src="./js/script.js"></script>
+
+    <footer class="footer">
+      Feito com <i class="fa-solid fa-heart"></i> por <span data-from></span>
+    </footer>
+
+    <!-- Galeria -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Galeria"
+      hidden
+    >
+      <button class="icon-btn lb-close" data-close aria-label="Fechar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button class="icon-btn lb-nav lb-prev" aria-label="Anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <figure class="lb-figure glass">
+        <img id="lb-img" alt="" />
+        <figcaption>
+          <h3 id="lb-title"></h3>
+          <p id="lb-text"></p>
+          <small id="lb-count"></small>
+        </figcaption>
+      </figure>
+      <button class="icon-btn lb-nav lb-next" aria-label="Próxima">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Carta -->
+    <div
+      class="letter-overlay"
+      id="letter"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Carta"
+      hidden
+    >
+      <button class="icon-btn lb-close" data-close aria-label="Fechar carta">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="envelope" id="envelope">
+        <div class="env-flap"></div>
+        <button
+          class="seal"
+          id="seal"
+          type="button"
+          aria-label="Abrir envelope"
+        >
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <p class="env-to">Para <span data-name></span></p>
+      </div>
+      <article class="paper" id="paper" tabindex="-1"></article>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.3/confetti.browser.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
